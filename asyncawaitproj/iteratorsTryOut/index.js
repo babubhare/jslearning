@@ -8,9 +8,11 @@ for (let ct of cta) {
     console.log(ct.getName());
 }
 
-for(let obj of cta.data)
-    {
-        console.log(obj.getName());
-    }
+for (let obj of cta.data) {
+    console.log(obj.getName());
+}
+
+var iteratorVal = cta.iterator();
+iteratorVal.next();
 
 console.log('wait');

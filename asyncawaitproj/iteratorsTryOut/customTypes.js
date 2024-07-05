@@ -20,6 +20,11 @@ customTypeArray.prototype[Symbol.iterator] = function () {
     };
 };
 
+customTypeArray.prototype.iterator = function()
+{
+    return this.__proto__[Symbol.iterator]();
+};
+
 export { customType };
 export { customTypeArray };
 
